@@ -10,9 +10,18 @@ describe "Solver" do
     context "reverse" do
         it "return the the reverse of the input string" do
             number = Solver.new
-            expect(number.Factorial('hello')).to eq('olleh')
-            expect(number.Factorial('Maen')).to eq('neaM')
-            expect(number.Factorial('conding')).to eq('gnidnoc')
+            expect(number.reverse('hello')).to eq('olleh')
+            expect(number.reverse('Maen')).to eq('neaM')
+            expect(number.reverse('conding')).to eq('gnidnoc')
         end
     end   
+    context "fizzbuzz" do
+        it "takes one argument, an integer N, and returns a string" do
+            number = Solver.new
+            expect(number.fizzbuzz(6)).to eq('fizz')
+            expect(number.fizzbuzz(10)).to eq('buzz')
+            expect(number.fizzbuzz(15)).to eq('fizzbuzz')
+            expect(number.fizzbuzz(7)).to eq('7')
+        end
+    end 
 end
