@@ -7,6 +7,7 @@ describe 'Solver' do
       expect(number.factorial(5)).to eq(120)
       expect(number.factorial(0)).to eq(1)
       expect(number.factorial(1)).to eq(1)
+      expect(number.factorial(-1)).to eq('negative value not allow')
     end
   end
   context 'reverse' do
