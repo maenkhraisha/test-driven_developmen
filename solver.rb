@@ -22,4 +22,8 @@ class Solver
       num.to_s
     end
   end
+
+  def palindrome(word)
+    word == word.reverse
+  end
 end

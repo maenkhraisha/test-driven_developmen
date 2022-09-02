@@ -26,4 +26,13 @@ describe 'Solver' do
       expect(number.fizzbuzz(7)).to eq('7')
     end
   end
+
+  context 'palindrome' do
+    it 'return true if the input is palindrome' do
+      number = Solver.new
+      expect(number.palindrome('racecar')).to eq(true)
+      expect(number.palindrome('Maen')).to eq(false)
+      expect(number.palindrome('conding')).to eq(false)
+    end
+  end
 end
